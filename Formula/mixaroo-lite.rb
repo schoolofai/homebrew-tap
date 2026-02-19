@@ -1,8 +1,8 @@
 class MixarooLite < Formula
   desc "AI-powered CLI tool that generates playlists and creates YouTube playback links"
   homepage "https://github.com/schoolofai/mixaroo-lite"
-  url "https://registry.npmjs.org/mixaroo-lite/-/mixaroo-lite-1.0.2.tgz"
-  sha256 "85d4f1fda462f99423fc625f4ab5df1c44f8190e34ce657f57766fd083d4ae83"
+  url "https://registry.npmjs.org/mixaroo-lite/-/mixaroo-lite-1.0.3.tgz"
+  sha256 "c164d3bf272d3437d8139bf0ec3a4081efcf964946259e35760cc1126d0d8f08"
   license "MIT"
 
   depends_on "node"
