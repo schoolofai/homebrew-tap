@@ -5,21 +5,21 @@
 class Obeya < Formula
   desc "CLI Kanban board for humans and AI agents"
   homepage "https://github.com/schoolofai/obeya"
-  version "0.1.6"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/schoolofai/obeya/releases/download/v0.1.6/obeya_0.1.6_darwin_amd64.tar.gz"
-      sha256 "1e0a8f692f5c7df0e21c44314b7912e3c707a529867dc84f65f87f2681c97e15"
+      url "https://github.com/schoolofai/obeya/releases/download/v0.2.0/obeya_0.2.0_darwin_amd64.tar.gz"
+      sha256 "22f1d631defa46682cc00835474b341968dfa6b09dbd9c87ddcb3eeb41a12bef"
 
       define_method(:install) do
         bin.install "ob"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/schoolofai/obeya/releases/download/v0.1.6/obeya_0.1.6_darwin_arm64.tar.gz"
-      sha256 "7fa5964eea5278a38aaf1cef69fadb79f4fe0490a8772b3092eb83b1060b454e"
+      url "https://github.com/schoolofai/obeya/releases/download/v0.2.0/obeya_0.2.0_darwin_arm64.tar.gz"
+      sha256 "6ce9d9945b685985f66ed52786dc4cdb0855f9ef87738a2cf21c53df82765f9c"
 
       define_method(:install) do
         bin.install "ob"
@@ -29,15 +29,15 @@ class Obeya < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/schoolofai/obeya/releases/download/v0.1.6/obeya_0.1.6_linux_amd64.tar.gz"
-      sha256 "f393cdc5db71b73daf1e8453505bc71aee9ec4ac0e7c78ff66046eacf2db0909"
+      url "https://github.com/schoolofai/obeya/releases/download/v0.2.0/obeya_0.2.0_linux_amd64.tar.gz"
+      sha256 "93d782b3db0c00cc6d3bd8fe18d10ad54693e5053eb2771a32b12d2d009f2e2e"
       define_method(:install) do
         bin.install "ob"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/schoolofai/obeya/releases/download/v0.1.6/obeya_0.1.6_linux_arm64.tar.gz"
-      sha256 "9f47cdc01be11371ea6a174cd0ca7dfca01e66f11720db8db4852d1c028cb81f"
+      url "https://github.com/schoolofai/obeya/releases/download/v0.2.0/obeya_0.2.0_linux_arm64.tar.gz"
+      sha256 "a45185cd98c4961d72ac0c60782527da99c407cf2c5a6208842a4bbadb1976aa"
       define_method(:install) do
         bin.install "ob"
       end
